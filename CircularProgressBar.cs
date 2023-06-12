@@ -304,7 +304,7 @@ namespace Progress_Tracker
                             break;
 
                         case _TextMode.Percentage:
-                            this.Text = (100.0 / _Maximum * _Value).ToString("N", setPrecision);
+                            this.Text = "%"+(100.0 / _Maximum * _Value).ToString("N", setPrecision);
                             break;
 
                         default:
