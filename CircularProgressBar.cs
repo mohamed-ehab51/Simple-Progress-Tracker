@@ -1,10 +1,6 @@
-﻿
-using System;
-using System.ComponentModel;
-using System.Drawing;
+﻿using System.ComponentModel;
 using System.Drawing.Drawing2D;
 using System.Globalization;
-using System.Windows.Forms;
 namespace Progress_Tracker
 {
     public class CircularProgressBar : Control
@@ -37,7 +33,7 @@ namespace Progress_Tracker
         private Color _ProgressColor1 = Color.Orange;
         private Color _ProgressColor2 = Color.Orange;
         private Color _LineColor = Color.Silver;
-        private LinearGradientMode _GradientMode = LinearGradientMode.ForwardDiagonal;
+        private LinearGradientMode _GradientMode = LinearGradientMode.Horizontal;
         private _ProgressShape ProgressShapeVal;
         private _TextMode ProgressTextMode;
 

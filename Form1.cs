@@ -1,3 +1,6 @@
+using System.Drawing.Drawing2D;
+using static Progress_Tracker.CircularProgressBar;
+
 namespace Progress_Tracker
 {
     public partial class Form1 : Form
@@ -7,6 +10,10 @@ namespace Progress_Tracker
             InitializeComponent();
             circularProgressBar1.Value = 0;
             circularProgressBar1.Maximum = 100;
+            circularProgressBar1.BarColor1 = Color.Green;
+            circularProgressBar1.BarColor2 = Color.Red;
+            circularProgressBar1.GradientMode = LinearGradientMode.Horizontal;
+            circularProgressBar1.ProgressShape = _ProgressShape.Round;
         }
 
         private void Form1_Load(object sender, EventArgs e)
