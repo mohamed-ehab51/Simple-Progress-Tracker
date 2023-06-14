@@ -27,13 +27,17 @@ namespace Progress_Tracker
             {
                 int tot = Int32.Parse(total.Text);
                 int curr = Int32.Parse(current.Text);
+                if(curr>tot)
+                {
+                    throw new Exception();
+                }
                 circularProgressBar1.Value = curr;
                 circularProgressBar1.Maximum = tot;
                 circularProgressBar1.Update();
             }
             catch (Exception)
             {
-                MessageBox.Show("Enter the values");
+                MessageBox.Show("Enter right values");
             }
         }
     }
